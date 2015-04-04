@@ -14,4 +14,5 @@
 
 - (BOOL)isDependencyForObject:(id)object withKeyPath:(NSString *)keyPath;
 
+- (void)stopObserving;
 @end

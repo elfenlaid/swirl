@@ -91,9 +91,18 @@
 
 - (void)removeDependencyWithObject:(id)object keyPath:(NSString *)path {
     [self dispatchInDependencyLock:^{
-        [self.dependencies filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(_SWLRillDependency *dependency, __unused NSDictionary *bindings) {
-            return ![dependency isDependencyForObject:object withKeyPath:path];
-        }]];
+        NSMutableArray *dependencies = [NSMutableArray new];
+        for (_SWLRillDependency *dep in self.dependencies) {
+            if ([dep isDependencyForObject:object withKeyPath:path]) {
+                // Don't wait autorelease pool and stop observing manually
+                // to prevent observing calls in the current run loop
+                [dep stopObserving];
+            } else {
+                [dependencies addObject:dep];
+            }
+        }
+
+        self.dependencies = dependencies;
     }];
 }
 

@@ -35,4 +35,8 @@
     return isDependency;
 }
 
+- (void)stopObserving {
+    [self.controller unobserveAll];
+}
+
 @end
