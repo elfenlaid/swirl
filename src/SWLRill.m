@@ -34,11 +34,12 @@
 }
 
 - (instancetype)initWithBlock:(SWLRillCallback)block {
-    if (!block) return nil;
-
-    self = [super init];
+    self = [self init];
     if (self) {
         self.block = block;
+        if (!self.block) {
+            self.block = (id)^{return nil;};
+        }
     }
 
     return self;
