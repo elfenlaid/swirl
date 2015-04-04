@@ -20,10 +20,4 @@ typedef id (^SWLRillCallback)();
 - (void)addDependencyWithObject:(id)object keyPath:(NSString *)path;
 - (void)removeDependencyWithObject:(id)object keyPath:(NSString *)path;
 
-- (BOOL)isEqual:(id)other;
-
-- (BOOL)isEqualToRill:(SWLRill *)rill;
-
-- (NSUInteger)hash;
-
 @end
