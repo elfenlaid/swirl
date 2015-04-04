@@ -10,13 +10,8 @@
 #import <XCTest/XCTest.h>
 #import <KVOController/FBKVOController.h>
 #import "SWLRill.h"
+#import "KVOObject.h"
 
-@interface KVOObject : NSObject
-@property (nonatomic, strong) NSNumber *number;
-@end
-
-@implementation KVOObject
-@end
 
 @interface RillTests : XCTestCase
 

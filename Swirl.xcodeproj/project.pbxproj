@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0881EFE3B1D7C2F2462398E3 /* libPods-Swirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6917DB6E98F0713E536220 /* libPods-Swirl.a */; };
+		185471FFA0A0DF3B7F9759DB /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 185472FF0A38F62DC1AE8595 /* KVOObject.m */; };
 		185473C7837512B55DB7BA49 /* _SWLRillDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 185478AF304C26491AABB18D /* _SWLRillDependency.m */; };
 		18547492A23B5B600828664A /* SWLSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854777CFCD7731C231A81E1 /* SWLSink.m */; };
 		18547D58F48A10D6E5B67094 /* SWLRill.m in Sources */ = {isa = PBXBuildFile; fileRef = 18547D42C21D9AD2482ED97B /* SWLRill.m */; };
@@ -34,8 +35,10 @@
 /* Begin PBXFileReference section */
 		12249D3DF428BE854C8212DB /* Pods-SwirlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwirlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwirlTests/Pods-SwirlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		185470E3525EB1DC80C82383 /* _SWLRillDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SWLRillDependency.h; sourceTree = "<group>"; };
+		185472FF0A38F62DC1AE8595 /* KVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
 		1854777CFCD7731C231A81E1 /* SWLSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLSink.m; sourceTree = "<group>"; };
 		185478AF304C26491AABB18D /* _SWLRillDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SWLRillDependency.m; sourceTree = "<group>"; };
+		1854790FCA548A843A4CB754 /* KVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
 		18547A0D03292FBF12176C7C /* SWLRill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLRill.h; sourceTree = "<group>"; };
 		18547BBC5C48CE4B8F659E0A /* SWLSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLSink.h; sourceTree = "<group>"; };
 		18547D42C21D9AD2482ED97B /* SWLRill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLRill.m; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			children = (
 				F6E8A60A1AD06656001BA93D /* RillTests.m */,
 				F6E96D291ACA8B4A0058D42C /* Supporting Files */,
+				185472FF0A38F62DC1AE8595 /* KVOObject.m */,
+				1854790FCA548A843A4CB754 /* KVOObject.h */,
 			);
 			path = SwirlTests;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */,
+				185471FFA0A0DF3B7F9759DB /* KVOObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
