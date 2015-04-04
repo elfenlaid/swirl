@@ -35,7 +35,7 @@
     [rill addDependencyWithObject:object keyPath:NSStringFromSelector(@selector(number))];
     object.number = @0;
 
-    [self waitForExpectationsWithTimeout:0.1 handler:nil];
+    [self waitForExpectationsWithTimeout:0 handler:nil];
 }
 
 - (void)testRemoveDependency {
