@@ -13,6 +13,7 @@
 		18547492A23B5B600828664A /* SWLSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854777CFCD7731C231A81E1 /* SWLSink.m */; };
 		18547D58F48A10D6E5B67094 /* SWLRill.m in Sources */ = {isa = PBXBuildFile; fileRef = 18547D42C21D9AD2482ED97B /* SWLRill.m */; };
 		F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8A60A1AD06656001BA93D /* RillTests.m */; };
+		F6E8A60D1AD076E9001BA93D /* SinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8A60C1AD076E9001BA93D /* SinkTests.m */; };
 		F6E96D121ACA8B4A0058D42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D111ACA8B4A0058D42C /* main.m */; };
 		F6E96D151ACA8B4A0058D42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D141ACA8B4A0058D42C /* AppDelegate.m */; };
 		F6E96D181ACA8B4A0058D42C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D171ACA8B4A0058D42C /* ViewController.m */; };
@@ -48,6 +49,7 @@
 		AD7F7AC9E4E0C963EB1F0AC0 /* Pods-Swirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swirl/Pods-Swirl.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E6F8A2F259B01E0D8C7A3F /* libPods-SwirlTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwirlTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E8A60A1AD06656001BA93D /* RillTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RillTests.m; sourceTree = "<group>"; };
+		F6E8A60C1AD076E9001BA93D /* SinkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinkTests.m; sourceTree = "<group>"; };
 		F6E96D0C1ACA8B4A0058D42C /* Swirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E96D101ACA8B4A0058D42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E96D111ACA8B4A0058D42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,8 +165,9 @@
 		F6E96D281ACA8B4A0058D42C /* SwirlTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6E8A60A1AD06656001BA93D /* RillTests.m */,
 				F6E96D291ACA8B4A0058D42C /* Supporting Files */,
+				F6E8A60A1AD06656001BA93D /* RillTests.m */,
+				F6E8A60C1AD076E9001BA93D /* SinkTests.m */,
 				185472FF0A38F62DC1AE8595 /* KVOObject.m */,
 				1854790FCA548A843A4CB754 /* KVOObject.h */,
 			);
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E8A60D1AD076E9001BA93D /* SinkTests.m in Sources */,
 				F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */,
 				185471FFA0A0DF3B7F9759DB /* KVOObject.m in Sources */,
 			);
