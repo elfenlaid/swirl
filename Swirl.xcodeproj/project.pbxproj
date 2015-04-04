@@ -11,13 +11,14 @@
 		185473C7837512B55DB7BA49 /* _SWLRillDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 185478AF304C26491AABB18D /* _SWLRillDependency.m */; };
 		18547492A23B5B600828664A /* SWLSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854777CFCD7731C231A81E1 /* SWLSink.m */; };
 		18547D58F48A10D6E5B67094 /* SWLRill.m in Sources */ = {isa = PBXBuildFile; fileRef = 18547D42C21D9AD2482ED97B /* SWLRill.m */; };
+		F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8A60A1AD06656001BA93D /* RillTests.m */; };
 		F6E96D121ACA8B4A0058D42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D111ACA8B4A0058D42C /* main.m */; };
 		F6E96D151ACA8B4A0058D42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D141ACA8B4A0058D42C /* AppDelegate.m */; };
 		F6E96D181ACA8B4A0058D42C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D171ACA8B4A0058D42C /* ViewController.m */; };
 		F6E96D1B1ACA8B4A0058D42C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E96D191ACA8B4A0058D42C /* Main.storyboard */; };
 		F6E96D1D1ACA8B4A0058D42C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E96D1C1ACA8B4A0058D42C /* Images.xcassets */; };
 		F6E96D201ACA8B4A0058D42C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E96D1E1ACA8B4A0058D42C /* LaunchScreen.xib */; };
-		F6E96D2C1ACA8B4A0058D42C /* SwirlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D2B1ACA8B4A0058D42C /* SwirlTests.m */; };
+		FA087C8F909F615BF2BD96D9 /* libPods-SwirlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E6F8A2F259B01E0D8C7A3F /* libPods-SwirlTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12249D3DF428BE854C8212DB /* Pods-SwirlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwirlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwirlTests/Pods-SwirlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		185470E3525EB1DC80C82383 /* _SWLRillDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SWLRillDependency.h; sourceTree = "<group>"; };
 		1854777CFCD7731C231A81E1 /* SWLSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLSink.m; sourceTree = "<group>"; };
 		185478AF304C26491AABB18D /* _SWLRillDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SWLRillDependency.m; sourceTree = "<group>"; };
@@ -39,7 +41,10 @@
 		18547D42C21D9AD2482ED97B /* SWLRill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLRill.m; sourceTree = "<group>"; };
 		3E6917DB6E98F0713E536220 /* libPods-Swirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swirl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551A14E83DD6E77591B49BB1 /* Pods-Swirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swirl/Pods-Swirl.release.xcconfig"; sourceTree = "<group>"; };
+		77AA8709285C2C1758BA54C0 /* Pods-SwirlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwirlTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwirlTests/Pods-SwirlTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD7F7AC9E4E0C963EB1F0AC0 /* Pods-Swirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swirl/Pods-Swirl.debug.xcconfig"; sourceTree = "<group>"; };
+		D0E6F8A2F259B01E0D8C7A3F /* libPods-SwirlTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwirlTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E8A60A1AD06656001BA93D /* RillTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RillTests.m; sourceTree = "<group>"; };
 		F6E96D0C1ACA8B4A0058D42C /* Swirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E96D101ACA8B4A0058D42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E96D111ACA8B4A0058D42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,7 +57,6 @@
 		F6E96D1F1ACA8B4A0058D42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F6E96D251ACA8B4A0058D42C /* SwirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E96D2A1ACA8B4A0058D42C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6E96D2B1ACA8B4A0058D42C /* SwirlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwirlTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA087C8F909F615BF2BD96D9 /* libPods-SwirlTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3E6917DB6E98F0713E536220 /* libPods-Swirl.a */,
+				D0E6F8A2F259B01E0D8C7A3F /* libPods-SwirlTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,6 +106,8 @@
 			children = (
 				AD7F7AC9E4E0C963EB1F0AC0 /* Pods-Swirl.debug.xcconfig */,
 				551A14E83DD6E77591B49BB1 /* Pods-Swirl.release.xcconfig */,
+				12249D3DF428BE854C8212DB /* Pods-SwirlTests.debug.xcconfig */,
+				77AA8709285C2C1758BA54C0 /* Pods-SwirlTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,7 +160,7 @@
 		F6E96D281ACA8B4A0058D42C /* SwirlTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6E96D2B1ACA8B4A0058D42C /* SwirlTests.m */,
+				F6E8A60A1AD06656001BA93D /* RillTests.m */,
 				F6E96D291ACA8B4A0058D42C /* Supporting Files */,
 			);
 			path = SwirlTests;
@@ -192,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E96D321ACA8B4A0058D42C /* Build configuration list for PBXNativeTarget "SwirlTests" */;
 			buildPhases = (
+				F70C740994FBEB7D041D1EBE /* Check Pods Manifest.lock */,
 				F6E96D211ACA8B4A0058D42C /* Sources */,
 				F6E96D221ACA8B4A0058D42C /* Frameworks */,
 				F6E96D231ACA8B4A0058D42C /* Resources */,
+				93D91A59233D5F47C21339EC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +304,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		93D91A59233D5F47C21339EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwirlTests/Pods-SwirlTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F70C740994FBEB7D041D1EBE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E96D2C1ACA8B4A0058D42C /* SwirlTests.m in Sources */,
+				F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +498,7 @@
 		};
 		F6E96D331ACA8B4A0058D42C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12249D3DF428BE854C8212DB /* Pods-SwirlTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,6 +518,7 @@
 		};
 		F6E96D341ACA8B4A0058D42C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AA8709285C2C1758BA54C0 /* Pods-SwirlTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
