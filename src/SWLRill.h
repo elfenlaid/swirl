@@ -6,8 +6,18 @@
 //  Copyright (c) 2015 Hellsing. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface SWLRill : NSObject
+typedef id (^SWLRillCallback)();
+
+
+@interface SWLRill : NSObject <NSCopying>
+
+@property (atomic, strong, readonly) id value;
+
+- (instancetype)initWithBlock:(SWLRillCallback)block;
+
+- (void)addDependencyWithObject:(id)object keyPath:(NSString *)path;
+- (void)removeDependencyWithObject:(id)object keyPath:(NSString *)path;
 
 @end

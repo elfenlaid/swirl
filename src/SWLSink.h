@@ -6,8 +6,20 @@
 //  Copyright (c) 2015 Hellsing. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+@class SWLRill;
+
+typedef void (^SWLSinkCallback)();
+
 
 @interface SWLSink : NSObject
+
+- (instancetype)initWithBlock:(SWLSinkCallback)block;
+
+- (void)addRillDependency:(SWLRill *)rill;
+- (void)removeRillDependency:(SWLRill *)rill;
+
+- (void)sink;
 
 @end

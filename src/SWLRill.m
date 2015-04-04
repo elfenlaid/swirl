@@ -6,8 +6,112 @@
 //  Copyright (c) 2015 Hellsing. All rights reserved.
 //
 
+#import <KVOController/FBKVOController.h>
+
 #import "SWLRill.h"
+#import "_SWLRillDependency.h"
+
+
+@interface SWLRill ()
+@property (nonatomic, copy) SWLRillCallback block;
+@property (nonatomic, strong) NSLock *valueLock;
+@property (nonatomic, strong) NSMutableArray *dependencies;
+@property (nonatomic, strong) NSLock *dependenciesLock;
+@end
+
 
 @implementation SWLRill
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.valueLock = [NSLock new];
+        self.dependencies = [NSMutableArray new];
+        self.dependenciesLock = [NSLock new];
+    }
+
+    return self;
+}
+
+- (instancetype)initWithBlock:(SWLRillCallback)block {
+    if (!block) return nil;
+
+    self = [super init];
+    if (self) {
+        self.block = block;
+    }
+
+    return self;
+}
+
+#pragma mark - Value handling
+
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
+    if ([key isEqualToString:@"value"]) return NO;
+    return [super automaticallyNotifiesObserversForKey:key];
+}
+
+- (id)value {
+    __block id value;
+    [self dispatchInValueLock:^{
+        value = self.block();
+    }];
+    return value;
+}
+
+- (void)dispatchInValueLock:(void (^)())block {
+    [self.valueLock lock];
+    block();
+    [self.valueLock unlock];
+}
+
+#pragma mark - Dependencies handling
+
+- (void)addDependencyWithObject:(id)object keyPath:(NSString *)path {
+    NSParameterAssert(object);
+    NSParameterAssert(path);
+
+    if (!object || !path) return;
+
+    FBKVOController *controller = [FBKVOController controllerWithObserver:self];
+    [controller observe:object 
+                keyPath:path 
+                options:NSKeyValueObservingOptionNew 
+                  block:^(SWLRill *rill, __unused id obj, __unused NSDictionary *change) {
+                      [rill willChangeValueForKey:NSStringFromSelector(@selector(value))];
+                      [rill didChangeValueForKey:NSStringFromSelector(@selector(value))];
+                  }];
+
+    _SWLRillDependency *dependency = [_SWLRillDependency dependencyWithObject:object keyPath:path controller:controller];
+    [self dispatchInDependencyLock:^{
+        [self.dependencies addObject:dependency];
+    }];
+}
+
+- (void)removeDependencyWithObject:(id)object keyPath:(NSString *)path {
+    [self dispatchInDependencyLock:^{
+        [self.dependencies filterUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(_SWLRillDependency *dependency, __unused NSDictionary *bindings) {
+            return ![dependency isDependencyForObject:object withKeyPath:path];
+        }]];
+    }];
+}
+
+- (void)dispatchInDependencyLock:(void (^)())block {
+    [self.dependenciesLock lock];
+    block();
+    [self.dependenciesLock unlock];
+}
+
+#pragma mark - Copying
+
+- (id)copyWithZone:(NSZone *)zone {
+    SWLRill *copy = (SWLRill *) [[[self class] alloc] init];
+
+    if (copy != nil) {
+        copy.block = self.block;
+    }
+
+    return copy;
+}
 
 @end
