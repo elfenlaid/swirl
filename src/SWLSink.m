@@ -54,6 +54,10 @@
 
 - (void)removeRillDependency:(SWLRill *)rill {
     [self dispatchInLock:^{
+        // Don't wait for autorelease pool and stop observing manually
+        // to prevent observing calls in the current run loop
+        FBKVOController *controller = self.dependencies[rill];
+        [controller unobserveAll];
         [self.dependencies removeObjectForKey:rill];
     }];
 }

@@ -124,4 +124,27 @@
     return copy;
 }
 
+- (BOOL)isEqual:(id)other {
+    if (other == self)
+        return YES;
+    if (!other || ![[other class] isEqual:[self class]])
+        return NO;
+
+    return [self isEqualToRill:other];
+}
+
+- (BOOL)isEqualToRill:(SWLRill *)rill {
+    if (self == rill)
+        return YES;
+    if (rill == nil)
+        return NO;
+    if (self.block != rill.block)
+        return NO;
+    return YES;
+}
+
+- (NSUInteger)hash {
+    return (NSUInteger) self.block;
+}
+
 @end
