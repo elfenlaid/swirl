@@ -1,0 +1,7 @@
+[
+  "-workspace", "Swirl.xcworkspace",
+  "-scheme", "Swirl",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
