@@ -1,4 +1,4 @@
 language: objective-c
 script:
-    pod install
-    xctool test
+    - pod install
+    - xctool test
