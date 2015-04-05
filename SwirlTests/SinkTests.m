@@ -62,4 +62,10 @@
     object.number = @0;
 }
 
+- (void)testRemoveNilDependency {
+    SWLSink *sink = [[SWLSink alloc] initWithBlock:^{}];
+    [sink removeRillDependency:nil];
+    XCTAssert(sink, @"can't be nil");
+}
+
 @end

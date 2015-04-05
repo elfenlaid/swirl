@@ -58,7 +58,7 @@
         // to prevent observing calls in the current run loop
         FBKVOController *controller = self.dependencies[rill];
         [controller unobserveAll];
-        [self.dependencies removeObjectForKey:rill];
+        if (rill) [self.dependencies removeObjectForKey:rill];
     }];
 }
 
