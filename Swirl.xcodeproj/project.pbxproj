@@ -10,13 +10,17 @@
 		0881EFE3B1D7C2F2462398E3 /* libPods-Swirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6917DB6E98F0713E536220 /* libPods-Swirl.a */; };
 		185471FFA0A0DF3B7F9759DB /* KVOObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 185472FF0A38F62DC1AE8595 /* KVOObject.m */; };
 		185473C7837512B55DB7BA49 /* _SWLRillDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 185478AF304C26491AABB18D /* _SWLRillDependency.m */; };
+		18547479C8FAB88530125D1B /* CollectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 185477D4501F2E012BB63B9B /* CollectionDataSource.m */; };
 		18547492A23B5B600828664A /* SWLSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854777CFCD7731C231A81E1 /* SWLSink.m */; };
+		185475C3F692F737765C09B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854780DDEAE7BF864C588C9 /* ViewController.m */; };
+		185479BF19AEE17ABAB68109 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185470BCA4FE786022F76622 /* CollectionCell.m */; };
+		18547A59F6A397E58AD7E7B9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185478B0701DD18DE859619B /* CollectionViewController.m */; };
 		18547D58F48A10D6E5B67094 /* SWLRill.m in Sources */ = {isa = PBXBuildFile; fileRef = 18547D42C21D9AD2482ED97B /* SWLRill.m */; };
+		18547FE2DA8B9E58057DFED5 /* ColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1854735FAC32649B51828819 /* ColorModel.m */; };
 		F6E8A60B1AD06656001BA93D /* RillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8A60A1AD06656001BA93D /* RillTests.m */; };
 		F6E8A60D1AD076E9001BA93D /* SinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8A60C1AD076E9001BA93D /* SinkTests.m */; };
 		F6E96D121ACA8B4A0058D42C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D111ACA8B4A0058D42C /* main.m */; };
 		F6E96D151ACA8B4A0058D42C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D141ACA8B4A0058D42C /* AppDelegate.m */; };
-		F6E96D181ACA8B4A0058D42C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E96D171ACA8B4A0058D42C /* ViewController.m */; };
 		F6E96D1D1ACA8B4A0058D42C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E96D1C1ACA8B4A0058D42C /* Images.xcassets */; };
 		F6E96D201ACA8B4A0058D42C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E96D1E1ACA8B4A0058D42C /* LaunchScreen.xib */; };
 		FA087C8F909F615BF2BD96D9 /* libPods-SwirlTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E6F8A2F259B01E0D8C7A3F /* libPods-SwirlTests.a */; };
@@ -34,13 +38,23 @@
 
 /* Begin PBXFileReference section */
 		12249D3DF428BE854C8212DB /* Pods-SwirlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwirlTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwirlTests/Pods-SwirlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1854704CDA27D8CDAAC548C5 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		185470BCA4FE786022F76622 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
 		185470E3525EB1DC80C82383 /* _SWLRillDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SWLRillDependency.h; sourceTree = "<group>"; };
 		185472FF0A38F62DC1AE8595 /* KVOObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOObject.m; sourceTree = "<group>"; };
+		1854735FAC32649B51828819 /* ColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorModel.m; sourceTree = "<group>"; };
+		18547523FBB3C7102B88A3C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1854755AEDB318EB77AA96DA /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		1854777CFCD7731C231A81E1 /* SWLSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLSink.m; sourceTree = "<group>"; };
+		185477D4501F2E012BB63B9B /* CollectionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionDataSource.m; sourceTree = "<group>"; };
+		1854780DDEAE7BF864C588C9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		185478AF304C26491AABB18D /* _SWLRillDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SWLRillDependency.m; sourceTree = "<group>"; };
+		185478B0701DD18DE859619B /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		1854790FCA548A843A4CB754 /* KVOObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOObject.h; sourceTree = "<group>"; };
+		185479D99CB81E55AF611234 /* CollectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionDataSource.h; sourceTree = "<group>"; };
 		18547A0D03292FBF12176C7C /* SWLRill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLRill.h; sourceTree = "<group>"; };
 		18547BBC5C48CE4B8F659E0A /* SWLSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLSink.h; sourceTree = "<group>"; };
+		18547C89F486C919943B6A6F /* ColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorModel.h; sourceTree = "<group>"; };
 		18547D42C21D9AD2482ED97B /* SWLRill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLRill.m; sourceTree = "<group>"; };
 		3E6917DB6E98F0713E536220 /* libPods-Swirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swirl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		551A14E83DD6E77591B49BB1 /* Pods-Swirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swirl/Pods-Swirl.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,8 +68,6 @@
 		F6E96D111ACA8B4A0058D42C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6E96D131ACA8B4A0058D42C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6E96D141ACA8B4A0058D42C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F6E96D161ACA8B4A0058D42C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6E96D171ACA8B4A0058D42C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6E96D1C1ACA8B4A0058D42C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6E96D1F1ACA8B4A0058D42C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F6E96D251ACA8B4A0058D42C /* SwirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +105,23 @@
 				185470E3525EB1DC80C82383 /* _SWLRillDependency.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		1854798E3EF2D35183BCA13E /* CollectionExample */ = {
+			isa = PBXGroup;
+			children = (
+				1854704CDA27D8CDAAC548C5 /* CollectionCell.h */,
+				185470BCA4FE786022F76622 /* CollectionCell.m */,
+				185479D99CB81E55AF611234 /* CollectionDataSource.h */,
+				185477D4501F2E012BB63B9B /* CollectionDataSource.m */,
+				1854755AEDB318EB77AA96DA /* CollectionViewController.h */,
+				185478B0701DD18DE859619B /* CollectionViewController.m */,
+				18547C89F486C919943B6A6F /* ColorModel.h */,
+				1854735FAC32649B51828819 /* ColorModel.m */,
+				18547523FBB3C7102B88A3C8 /* ViewController.h */,
+				1854780DDEAE7BF864C588C9 /* ViewController.m */,
+			);
+			path = CollectionExample;
 			sourceTree = "<group>";
 		};
 		64B2E275C1DBA805AD3BF1E7 /* Frameworks */ = {
@@ -141,9 +170,8 @@
 			children = (
 				F6E96D131ACA8B4A0058D42C /* AppDelegate.h */,
 				F6E96D141ACA8B4A0058D42C /* AppDelegate.m */,
-				F6E96D161ACA8B4A0058D42C /* ViewController.h */,
-				F6E96D171ACA8B4A0058D42C /* ViewController.m */,
 				F6E96D0F1ACA8B4A0058D42C /* Supporting Files */,
+				1854798E3EF2D35183BCA13E /* CollectionExample */,
 			);
 			path = Swirl;
 			sourceTree = "<group>";
@@ -345,12 +373,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E96D181ACA8B4A0058D42C /* ViewController.m in Sources */,
 				F6E96D151ACA8B4A0058D42C /* AppDelegate.m in Sources */,
 				F6E96D121ACA8B4A0058D42C /* main.m in Sources */,
 				18547D58F48A10D6E5B67094 /* SWLRill.m in Sources */,
 				18547492A23B5B600828664A /* SWLSink.m in Sources */,
 				185473C7837512B55DB7BA49 /* _SWLRillDependency.m in Sources */,
+				185479BF19AEE17ABAB68109 /* CollectionCell.m in Sources */,
+				18547479C8FAB88530125D1B /* CollectionDataSource.m in Sources */,
+				18547A59F6A397E58AD7E7B9 /* CollectionViewController.m in Sources */,
+				18547FE2DA8B9E58057DFED5 /* ColorModel.m in Sources */,
+				185475C3F692F737765C09B6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +509,8 @@
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-pedantic",
 				);
 			};
 			name = Debug;
@@ -494,6 +528,8 @@
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-pedantic",
 				);
 			};
 			name = Release;

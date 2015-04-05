@@ -3,6 +3,7 @@
 
 target 'Swirl' do
   pod 'KVOController', '1.0.3'
+  pod 'Masonry', '0.6.1'
 end
 
 target 'SwirlTests' do
