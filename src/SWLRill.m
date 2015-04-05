@@ -45,6 +45,11 @@
     return self;
 }
 
+- (void)rill {
+    [self willChangeValueForKey:NSStringFromSelector(@selector(value))];
+    [self didChangeValueForKey:NSStringFromSelector(@selector(value))];
+}
+
 #pragma mark - Value handling
 
 + (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
@@ -79,8 +84,7 @@
                 keyPath:path 
                 options:NSKeyValueObservingOptionNew 
                   block:^(SWLRill *rill, __unused id obj, __unused NSDictionary *change) {
-                      [rill willChangeValueForKey:NSStringFromSelector(@selector(value))];
-                      [rill didChangeValueForKey:NSStringFromSelector(@selector(value))];
+                      [rill rill];
                   }];
 
     _SWLRillDependency *dependency = [_SWLRillDependency dependencyWithObject:object keyPath:path controller:controller];

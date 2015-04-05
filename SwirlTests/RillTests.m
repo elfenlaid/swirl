@@ -61,13 +61,28 @@
     XCTAssert(YES, @"Pass");
 }
 
-
 - (void)testValue {
     SWLRill *rill = [[SWLRill alloc] initWithBlock:^id {
         return @"testValue";
     }];
 
     XCTAssertEqual(rill.value, @"testValue", @"should return right value");
+}
+
+- (void)testManualRill {
+    SWLRill *rill = [[SWLRill alloc] initWithBlock:nil];
+
+    XCTestExpectation *callExpectation = [self expectationWithDescription:@"call on dependency"];
+    FBKVOController *controller = [FBKVOController controllerWithObserver:self];
+    [controller observe:rill
+                keyPath:NSStringFromSelector(@selector(value))
+                options:NSKeyValueObservingOptionNew
+                  block:^(id observer, id r, NSDictionary *change) {
+                      [callExpectation fulfill];
+                  }];
+    [rill rill];
+
+    [self waitForExpectationsWithTimeout:0 handler:nil];
 }
 
 @end

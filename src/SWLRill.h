@@ -20,4 +20,6 @@ typedef id (^SWLRillCallback)();
 - (void)addDependencyWithObject:(id)object keyPath:(NSString *)path;
 - (void)removeDependencyWithObject:(id)object keyPath:(NSString *)path;
 
+- (void)rill;
+
 @end
