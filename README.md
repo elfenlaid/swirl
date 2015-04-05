@@ -3,8 +3,6 @@ Tiny library inspired by reactive approach
 
 You shouldn't use it yet though :(
 
-----
-
 ## What this is all about
 Library consists of two interfaces:
 
@@ -56,6 +54,6 @@ SWLSink *sink = [[SWLSink alloc] initWithBlock:^{
 
 On each dependency notification, `Sink` would execute its block. `Sink` could have more than one dependency.
 
-----
+====
 
 In order to understand how to use `Rill` and `Sink` you may scroll through examples.
