@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/elfenlaid/swirl.svg?branch=master)](https://travis-ci.org/elfenlaid/swirl)
+
+
 # swirl
 Tiny library inspired by reactive approach
 
